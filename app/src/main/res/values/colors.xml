@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- light theme -->
+
+        <color name="input_background_color_light">#ECECEC</color>
+        <color name="button_background_color_light">#FFFFFF</color>
+        <color name="background_color_light">#FFFFFF</color>
+        <color name="deep_background_color_light">#e8e8e8</color>
+        <color name="border_color_light">#8E8E8E</color>
+        <color name="backgroundGlobal_light">#5283d9</color>
+
+    <!-- dark theme -->
+
+        <color name="input_background_color_dark">#2A2D3C</color>
+        <color name="button_background_color_dark">#353535</color>
+        <color name="background_color_dark">#1c1c1c</color>
+        <color name="deep_background_color_dark">#c1c1c1</color>
+        <color name="border_color_dark">#cacaca</color>
+        <color name="backgroundGlobal_dark">#3D425A</color>
+
+    <!-- commune theme -->
+
+        <color name="primary_color">#FF3D425A</color>
+
+</resources>

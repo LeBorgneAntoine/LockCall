@@ -1,0 +1,21 @@
+<resources>
+    <!-- Global string -->
+        <string name="app_name">Secure call</string>
+
+    <!-- Authenticate/register activity -->
+        <string name="login_button">Login</string>
+        <string name="login_title">Login</string>
+        <string name="password_button">Password</string>
+        <string name="call_button">Call</string>
+        <string name="register_link">Go to register</string>
+
+    <!-- Register activity -->
+        <string name="confirm_password_button">Confirm password</string>
+        <string name="register_button">Register</string>
+
+    <!-- unlock activity -->
+        <string name="phone_picker_title">Number picker</string>
+        <string name="phone_picker_hint">Enter phone number</string>
+        <string name="validation_button">Validate</string>
+
+</resources>

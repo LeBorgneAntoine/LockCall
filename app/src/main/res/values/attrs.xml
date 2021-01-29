@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InputState">
+        <attr name="state_wrong" format="boolean"/>
+    </declare-styleable>
+
+    <attr name="inputBackgroundColor"   format="reference"/>
+    <attr name="buttonBackgroundColor"  format="reference"/>
+    <attr name="borderColor"            format="reference"/>
+    <attr name="deepBackgroundColor" format="reference"/>
+    <attr name="backgroundGlobal" format="reference"/>
+</resources>

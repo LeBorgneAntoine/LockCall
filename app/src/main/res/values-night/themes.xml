@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TP3" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <item name="colorPrimary">@color/primary_color</item>
+
+        <item name="inputBackgroundColor">@color/input_background_color_dark</item>
+        <item name="buttonBackgroundColor">@color/button_background_color_dark</item>
+        <item name="borderColor">@color/border_color_dark</item>
+        <item name="deepBackgroundColor">@color/deep_background_color_dark</item>
+        <item name="backgroundColor">@color/background_color_dark</item>
+        <item name="colorPrimaryDark">@color/primary_color</item>
+        <item name="backgroundGlobal">@color/backgroundGlobal_dark</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

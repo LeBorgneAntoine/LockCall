@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:weightSum="100"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/global_background"
+    tools:context=".UnlockActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:weightSum="100"
+        android:gravity="center"
+
+        android:layout_weight="10">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="30"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            tools:ignore="NestedWeights">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/back"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_arrow"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="70"
+            android:gravity="right"
+            android:paddingEnd="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/login_name"
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/small_margin"
+                android:textSize="@dimen/large_font_size"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/background_color_light"
+                android:layout_height="wrap_content"
+                android:text="login name"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:background="@drawable/login_background"
+        android:foregroundGravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <EditText
+            android:id="@+id/phone_input"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="168dp"
+            android:background="@drawable/normal_input"
+            android:fontFamily="@font/roboto_light"
+            android:ems="10"
+            android:inputType="phone"
+            android:paddingLeft="20dp"
+            android:elevation="8dp"
+            android:hint="@string/phone_picker_hint"
+            android:textSize="@dimen/medium_font_size"
+            app:layout_constraintBottom_toTopOf="@+id/validate_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:drawableEnd="@drawable/phone_input"
+            android:paddingRight="@dimen/medium_font_size"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/validate_button"
+            android:layout_width="180dp"
+            android:textColor="@color/background_color_light"
+            android:textSize="@dimen/medium_font_size"
+            android:text="@string/validation_button"
+            android:fontFamily="@font/roboto_thin"
+            android:layout_height="@dimen/input_height"
+            android:background="@drawable/normal_button"
+            android:layout_marginBottom="240dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_picker_title"
+            android:textSize="@dimen/large_font_size"
+            android:textColor="?attr/borderColor"
+            android:fontFamily="@font/roboto_regular"
+            app:layout_constraintBottom_toTopOf="@+id/phone_input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
